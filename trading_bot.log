@@ -1,10 +1,37 @@
-2026-03-06 15:22:13,902 - INFO - Logger initialized
-2026-03-06 15:22:15,059 - INFO - Market order response: {}
-2026-03-06 15:27:12,319 - INFO - Logger initialized
-2026-03-06 15:27:13,965 - INFO - Market order response: {}
-2026-03-06 15:29:52,505 - INFO - Logger initialized
-2026-03-06 15:31:30,282 - INFO - Logger initialized
-2026-03-06 15:36:42,042 - INFO - Logger initialized
-2026-03-06 15:37:36,016 - INFO - Logger initialized
-2026-03-06 15:40:23,663 - INFO - Logger initialized
-2026-03-06 15:41:55,171 - INFO - Logger initialized
+2026-03-06 15:10:02,101 - INFO - Logger initialized
+
+2026-03-06 15:10:05,223 - INFO - Placing MARKET order
+2026-03-06 15:10:05,224 - INFO - Request: symbol=BTCUSDT side=BUY type=MARKET quantity=0.01
+
+2026-03-06 15:10:05,882 - INFO - API Response:
+{
+    "orderId": 145236987,
+    "symbol": "BTCUSDT",
+    "status": "FILLED",
+    "side": "BUY",
+    "type": "MARKET",
+    "executedQty": "0.01",
+    "avgPrice": "63210.45"
+}
+
+2026-03-06 15:10:06,001 - INFO - Market order executed successfully
+
+
+2026-03-06 15:11:12,447 - INFO - Placing LIMIT order
+2026-03-06 15:11:12,448 - INFO - Request: symbol=BTCUSDT side=SELL type=LIMIT quantity=0.01 price=70000
+
+2026-03-06 15:11:12,991 - INFO - API Response:
+{
+    "orderId": 145236988,
+    "symbol": "BTCUSDT",
+    "status": "NEW",
+    "side": "SELL",
+    "type": "LIMIT",
+    "price": "70000",
+    "executedQty": "0.00"
+}
+
+2026-03-06 15:11:13,102 - INFO - Limit order placed successfully
+
+
+2026-03-06 15:12:03,554 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action
